@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'RocknRoll One', sans-serif;
+}
+textarea{
+  display: none;
+}
+body{
+    background: #f2f2f2;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  
+  }
+  .wrapper{
+    position: absolute; /* postulat de départ */
+    top: 50%; left: 50%; /* à 50%/50% du parent référent */
+    transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+    width: 30%;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+  margin: 20px;
+  
+  } 
+  .wrapper .title{
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    border-radius: 15px 15px 0 0;
+    padding: 0 20px;
+    font-weight: 500;
+    font-size: 20px;
+    background: #FF4E50;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  }
+  .wrapper .box{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .score
+  {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+  span{
+    font-size: 2em;
+  }
+  a{
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px;
+    background: #FF4E50;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  button{
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px;
+    background: #FF4E50;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  input{
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px;
+  }
+  .title{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 100px;
+  
+  }
+  .score p{
+      margin: 20px;
+  }
+
+  .scoreBox{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+  }
+  .scoreBox h2{
+    margin: 10px;
+    font-size: 1.5em;
+  }
+  form {
+    margin: 5px;
+  }
+  .boxResultat{
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 10px;
+    width: 100%;
+  }
