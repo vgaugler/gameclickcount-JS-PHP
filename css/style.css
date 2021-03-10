@@ -17,10 +17,8 @@ body{
   
   }
   .wrapper{
-    position: absolute; /* postulat de départ */
-    top: 50%; left: 50%; /* à 50%/50% du parent référent */
-    transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
-    width: 30%;
+    
+    min-width: 320px;
   background: #fff;
   border-radius: 15px;
   box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
@@ -29,8 +27,9 @@ body{
   
   } 
   .wrapper .title{
-    line-height: 60px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: #fff;
     border-radius: 15px 15px 0 0;
     padding: 0 20px;
@@ -41,6 +40,15 @@ body{
   background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
   }
+
+  h3{
+    font-size: 9px;
+  }
+  img {
+    max-width: 100px;
+    height: auto;
+  }
+
   .wrapper .box{
     padding: 20px;
     width: 100%;
@@ -50,6 +58,14 @@ body{
     flex-direction: column;
     align-items: center;
     
+  }
+  .boxClick {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
   .score
   {
@@ -84,7 +100,8 @@ body{
     border-radius: 5px;
     border: 1px solid black;
     padding: 10px;
-    margin: 20px;
+ 
+    width: 100%;
   }
   .title{
     font-size: 35px;
@@ -93,9 +110,7 @@ body{
     line-height: 100px;
   
   }
-  .score p{
-      margin: 20px;
-  }
+
 
   .scoreBox{
     height: 50%;
@@ -103,15 +118,19 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     flex-direction: column;
   }
   .scoreBox h2{
     margin: 10px;
-    font-size: 1.5em;
+    font-size: 1em;
   }
   form {
-    margin: 5px;
+   width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .boxResultat{
     border-radius: 5px;

@@ -1,19 +1,17 @@
-let count1 = 0;
-let count2 = 0;
+/*initialisation compteur de click*/
+let count = 0;
 
-const child = document.getElementById('child');
-let countChild = document.getElementById('child-count');
+/*récupération des element du dom par leur id dans une variable*/
+const click = document.getElementById('linkclick');
+let counter = document.getElementById('countclick');
 
 
-parent.addEventListener('click', function(){
-       count1++;
-       countParent.innerHTML = count1;                 
-  });
-child.addEventListener('click', function(event){
-        count2++;
-  countChild.innerHTML = count2; 
-  let result = document.getElementById('resultat');
-  result.textContent = count2;
-  event.preventDefault();   
-  event.stopPropagation();
- });
+/*ecoute des evenements 'click sur l'élèment récupere*/
+click.addEventListener('click', function(event) {
+   count++; /* incrmeentation a chaque click */
+   counter.innerHTML = count; /* modif de counter dans le dom*/
+   let result = document.getElementById('resultat');
+   result.textContent = count;
+   event.preventDefault();
+   event.stopPropagation();
+});
